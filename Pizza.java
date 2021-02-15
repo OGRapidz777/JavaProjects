@@ -1,4 +1,4 @@
-
+// Authors Edwin M Alvarez Cintron, Amil Inostroza, Carlos Roque 
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
@@ -11,37 +11,37 @@ public class Pizza
 		//Create a Scanner object to read input
 		Scanner keyboard = new Scanner (System.in);
 		
-		String firstName;                                                               //user's first name
-		boolean discount = false;                                           //flag, true if user is eligible for discount
-		int inches;							//size of the pizza
-		//char crustType;					//code for type of crust
-		String crust = "Hand-tossed"; //name of crust
+		String firstName;                                //user's first name
+		boolean discount = false;                        //flag, true if user is eligible for discount
+		int inches;					//size of the pizza
+		//char crustType;				//code for type of crust
+		String crust = "Hand-tossed"; 			//name of crust
 		double cost = 0;				//cost of the pizza
-		final double TAX_RATE = .08;                        //sales tax rate
-		double tax;			//amount of tax
-		char choice;			//user's choice
-		String input;                                                   //user input
-		String toppings = "Cheese ";                        //list of toppings	
-		int numberOfToppings = 0;		//number of toppings
+		final double TAX_RATE = .08;                      //sales tax rate
+		double tax;					//amount of tax
+		char choice;					//user's choice
+		String input;                                    //user input
+		String toppings = "Cheese ";                     //list of toppings	
+		int numberOfToppings = 0;			//number of toppings
                                        
 		
 		//prompt user and get first name
-		System.out.println("Welcome to Mike and Diane's Pizza");
-                                        System.out.println("Enter your first name:  ");
-		firstName = keyboard.nextLine();
+		System.out.println("Welcome to Mike and Diane's Pizza"); // Display a Welcome Message
+                   System.out.println("Enter your first name:  "); // Prompt the user for his/her first name
+		firstName = keyboard.nextLine(); // read user imput from keyboard
 		//determine if user is eligible for discount by
-                                        if (firstName.equalsIgnoreCase("mike")){
-                                           discount = true;
-                                           System.out.println("You have a 2 dollar discount");
+                                        if (firstName.equalsIgnoreCase("mike")){ // If name equals "Mike" then
+                                           discount = true; // $2 Discount is appplied 
+                                           System.out.println("You have a 2 dollar discount"); // Notify whenever the user has a discount
                                              }
-                                        if (firstName.equalsIgnoreCase("diane"))
+                                        if (firstName.equalsIgnoreCase("diane")) // If first name equals "Diane" Then 
                                            {
-                                             discount = true;
-                                             System.out.println("You have a 2 dollar discount");
+                                             discount = true; // $2 Dollar discount is applied
+                                             System.out.println("You have a 2 dollar discount"); // Notify whenever the user has a discount
                                              }
 
-		//having the same first name as one of the owners
-		//ADD LINES HERE FOR TASK #1
+		
+		
 		
 		//prompt user and get pizza size choice
 		System.out.println("Pizza Size (inches)   Cost");
